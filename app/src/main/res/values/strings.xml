@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BirthdayCard</string>
+    <string name="happy">Happy</string>
+    <string name="birthday">Birthday</string>
+    <string name="wishes">wishes</string>
+    <string name="image_description">Image of cake</string>
+    <string name="to_you">to you</string>
+</resources>

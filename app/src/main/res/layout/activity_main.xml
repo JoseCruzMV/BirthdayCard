@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/cake_image_view"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/cake_original"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/congrats_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing=".2"
+        android:text="@string/happy"
+        android:textAllCaps="true"
+        android:textColor="@color/orange"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cake_image_view" />
+
+    <TextView
+        android:id="@+id/birth_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing=".2"
+        android:text="@string/birthday"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_700"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/congrats_text_view" />
+
+    <TextView
+        android:id="@+id/wishes_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing=".2"
+        android:text="@string/wishes"
+        android:textAllCaps="true"
+        android:textColor="@color/orange"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birth_text_view"/>
+
+    <TextView
+        android:id="@+id/to_you_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing=".2"
+        android:text="@string/to_you"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wishes_text_view"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
